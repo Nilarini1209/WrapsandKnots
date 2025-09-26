@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contac Us-Wraps and Knots</title>
+    <link rel="icon" href="logo.webp" type="image/png" />
+  <link rel="stylesheet" href="contacts.css" />
+</head>
+
+
+  <!-- HEADER -->
+ <header class="header">
+  <img src="first-left-leaves.webp" alt="Leaf Decor" class="leaf-top-left" />
+  <div class="logo-container">
+    <img src="logo.png" alt="Wraps & Knots Logo" class="logo" />
+  </div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <nav class="navbar" id="navbar">
+    <a href="index.html">HOME</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn" id="products-btn">Products</a>
+      <div class="dropdown-content" id="products-menu">
+        <a href="flowerindex.html">Flowers</a>
+        <a href="Hamper.html">Hampers</a>
+      </div>
+    </div>
+    <a href="weddecor.html">WEDDING DECOR</a>
+    <a href="live-counter">LIVE COUNTER</a>
+    <a href="contacts.css">CONTACT</a>
+  </nav>
+</header>
+
+  <body>
+  <!-- ========== Hero Section with Contact Form ========== -->
+ <section class="hero-contact" >
+    <img data-src="contact.webp" alt="Background" class="background-img" />
+  <form class="contact-form" id="contactForm" action="contactform/sendmail.php" method="post">
+    <input type="hidden" name="form_type" value="contact" />
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email ID" required />
+    <input type="tel" name="contact" placeholder="Phone Number" required />
+    <textarea name="message" placeholder="Message" rows="4" required></textarea>
+    <button type="submit">SUBMIT</button>
+</form>
+<div id="form-response" style="margin-top: 10px; color: green;"></div>
+</section>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/wrapsandknotschennai/"><img src="instagram.png" alt="Instagram" /></a>
+    <a href="https://m.facebook.com/wrapsandknotschennai/"><img src="facebook.png" alt="Facebook" /></a>
+    <a href="https://wa.me/919940100709"><img src="whatsapp.png" alt="whatsapp" /></a>
+  </div>
+
+  <!-- ========== FAQ Section ========== -->
+  <!-- ========== FAQ Section ========== -->
+<section class="faq-section">
+  
+  <div class="faq-heading-box">
+    <img src="flowercon.png" class="faq-bg-img" alt="decor" />
+    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+    <h4>LET THE FLOWERS DO THE TALKING</h4>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        What services do you offer as a florist?
+        <span class="accordion-icon">⌄</span>
+      </button>
+      <div class="accordion-content">We offer fresh flower bouquets, custom arrangements, event floral design, and delivery services for all occasions.</div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        Do you offer customization?
+        <span class="accordion-icon">⌄</span>
+      </button>
+      <div class="accordion-content">Absolutely! You can choose the flowers, colors, and size, and our florists will design it according to your preferences.</div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+       Do you offer same-day delivery?
+        <span class="accordion-icon">⌄</span>
+      </button>
+      <div class="accordion-content">Yes, we do offer same-day delivery for orders placed before 2 PM on weekdays and 12 PM on weekends.</div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        Do you deliver outside the city?
+        <span class="accordion-icon">⌄</span>
+      </button>
+      <div class="accordion-content">We primarily deliver within the city, but for nearby areas, you can contact us for special arrangements.</div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">
+        How do I care for my flowers?
+        <span class="accordion-icon">⌄</span>
+      </button>
+      <div class="accordion-content">Keep them in a clean vase with fresh water, trim the stems every 2 days, and avoid direct sunlight or heat.</div>
+    </div>
+  </div>
+</section>
+<script src="contact.js"></script>
+  </body>
+
+
+
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <h2>WHAT STOPS YOU?</h2>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><strong>ADDRESS</strong><br>
+                No 24/A,Ground floor college road Nungambakkam,opposite to Indian Meteorological center,chennai-600006</p>
+        <p><strong>EMAIL</strong><br>
+                info@wrapsandknots.com </p>
+        <p><strong>PH.NO</strong><br>
+                  +91 9940-100-709
+        </p>
+        <p><strong>ALTERNATE PH.NO</strong><br>
+                  +91 996-266-9933
+        </p>
+        </div>
+      <div class="footer-right">
+        <p><strong>QUICK LINK</strong></p>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="flowerindex.html">FLOWERS</a></li>
+          <li><a href="Hamper.html">HAMPERS</a></li>
+          <li><a href="weddecor.html">WEDDING DECOR</a></li>
+          <li><a href="live-counter.html">LIVE COUNTER</a></li>
+          <li><a href="contacts.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <img src="leafdecor.png" alt="Leaf Decor" class="footer-leaf">
+    </div>
+  </footer>
+
+
+ 
+
+</html>
+
